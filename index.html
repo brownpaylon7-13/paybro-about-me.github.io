@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<h4> <i> <font size = 2> Last Updated: 4/25/2026 9:11 PM </font> </i> </h4>
+<title> About Me </title>
+<link rel="stylesheet" type="text/css" href="PaylonBrown_styles.css">
+<script type="text/javascript" src="PaylonBrown_forms.js"></script>
+</head>
+<body>
+
+<center> <img src="https://www.ecok.edu/sites/default/files/ecok_logo.png" alt = "ECU Logo"> </center> <br>
+
+<nav>
+	<h1> <i> Page Navigation </i> </h1>
+	<ul>
+	<li> <a href="#aboutme"> About Me </a> </li>
+	<li> <a href="#classes"> Classes </a> </li>
+	<li> <a href="#hobbies"> Hobbies </a> </li>
+        <li> <a href="#forms"> Forms </a> </li>
+	</ul>
+</nav>
+
+<section id="aboutme">
+	<h1> <i> About Me </i> </h1>
+	<b> My name is Paylon </b><p>
+	<i> My major is Computer Science </i><p>
+	<u> I am a senior </u><p>
+	<br> <img src="https://tse2.mm.bing.net/th/id/OIP.w-uD8_PQxcmuJLgGni52WwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hello World" width="355" height="200"> <br>
+</section>
+
+<section id="classes">
+	<h1> <i> Classes </i> </h1>
+	This semester I am taking the following classes: <p>
+
+	<div class="container">
+
+		<div class="grid-1">
+			<h2>CMPSC-3323 Internet Programming</h2>
+			Internet Programming goes over server information and HTML markup. I like the creation of HTMLs and learning the language interactively by making content that is both relevant to me and introduces new concepts. <p>
+		</div>
+
+		<div class="grid-1">
+			<h2>CMPSC-4213 Data Base Design</h2>
+			Data Base Design explains different data models and ways to design a good database. It is imperative for a database to be efficient and have certain properties depending on the use case. <p>
+		</div>
+
+		<div class="grid-1">
+			<h2>CMPSC-4223 UNIX System Administration</h2>
+			UNIX System Administration goes over the basic concepts of UNIX system administration using text editors, commands, changing permissions, and making scripts that can be automated. It is very interesting to me as I am looking toward a career in IT, and UNIX is used in a majority of systems. <p>
+		</div>
+
+		<div class="grid-1">
+			<h2>CMPSC-4473 Theory Progrmng Languages</h2>
+			Theory Programming Languages involves the design and construction of compilers, and goes over the theory of languages, parsing, and compilers. I like how it goes through languages and explains what they are good at and what they aren't good at. <p>
+		</div>
+
+	</div>
+
+	<h2>CPSMA-3103 Algorithm Analysis</h2>
+	Algorithm Analysis explains and goes in depth on the analysis of algorithms and their applications. It goes over how algorithms are used and applied and how good they are in certain situations. <p>
+		
+</section>
+
+<section id="forms">
+	<h1> <i> HTML Forms </i> </h1>
+
+	<div class="container-forms">
+		<form name="arithmeticForm">
+			<div class="grid-1">
+				<h2> Arithmetic Calculator </h2>
+				<label> Number 1: </label>
+				<input type="number", id="num1"><p>
+				<label> Number 2: </label>
+				<input type="number", id="num2"><p>
+				<label> Operator: </label><p>
+				<input type="radio" name="operator" value="add"> +<p>
+                		<input type="radio" name="operator" value="subtract"> -<p>
+                		<input type="radio" name="operator" value="multiply"> ×<p>
+                		<input type="radio" name="operator" value="divide"> ÷<p>
+
+				<input type="button" value="Calculate" onclick="arithmeticCalc()"/>
+			</div>
+		</form>
+
+		<form name="factorialForm">
+			<div class="grid-1">
+				<h2> Factorial Calculator </h2>
+				<label> Number: </label>
+				<input type="number", id="num"><p>
+				<input type="button" value="Calculate" onclick="factorialCalc()"/><p>
+				Result: <div id="factorialResult"> </div>
+			</div>
+		</form>
+		<form name="fibonacci">
+			<div class="grid-1">
+				<h2> Fibonacci Sequence </h2>
+				<label> N-th Fibonacci number: </label>
+				<input type="number", id="n"><p>
+				<input type="button" value="Calculate" onclick="nthFibonacciCalc()"/>
+			</div>
+		</form>
+		<form name="range">
+			<div class="grid-1">
+				<h2> Range Calculator </h2>
+				<label> Number 1: </label>
+				<input type="number", id="num3"><p>
+				<label> Number 2: </label>
+				<input type="number", id="num4"><p>
+				<label> Number 3: </label>
+				<input type="number", id="num5"><p>
+
+				<input type="button" value="Calculate" onclick="rangeCalc()"/>
+			</div>
+		</form>
+	</div>
+	<div class="container-forms-full">
+		<form name="mailingList">
+			<div class="grid-1">
+				<h2> Mailing List Sign-Up </h2>
+				<label> First Name: </label>
+				<input type="text" id="firstName" value = "John"><p>
+				<label> Last Name: </label>
+				<input type="text" id="lastName" value = "Doe"><p>
+				<label> Email: </label>
+				<input type="text" id="email" value = "JDoe@HTML.com"><p>
+				<label> ZIP Code: </label>
+				<input type="text" id="zip" value = "12345"><p>
+
+				<input type="button" value="Submit" onclick="submitMailing()"/>
+				<input type="button" value="Reset" onclick="resetMailing()"/>
+			</div>
+		</form>
+		<div class="display-container">
+			<h3> Sign-Ups: </h3>
+			<div id="signUpDisplay"></div>
+		</div>
+	</div>
+</section>
+
+<section id="hobbies">
+	<h1> <i> Hobbies </i> </h1>
+	<ul> <font size = "3">
+	<li> Playing video games </li>
+	<li> Watching/discussing sports, primarily basketball </li>
+	<li> Chilling with my beautiful cat, Poundcake! </li>
+	</ul> </font>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z3U0udLH974?si=MVrA2mA7xY3hIkfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <p>
+	
+<center> <img src="https://i.imgur.com/FHrAV4Q.png" alt = "Poundcake"> </center> <br>
+
+</section>
+
+<a href="https://www.ecok.edu/index.php"> ECU Homepage </a><br>
+
+</body>
+</html>
